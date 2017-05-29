@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <!--Import Google Icon Font-->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+     <link rel="stylesheet" href="css/estilos.css" media="screen" title="no title">
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+   <nav class="#b0bec5 blue-grey lighten-3 ">
+  <div class="nav">
+    <a href="#!" class="brand-logo left">D.I.F</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="interfazBusquedaBeneficiario.html"><i class="material-icons left">search</i>Buscar</a></li>
+      <li><a href="interfazBeneficiario.html"><i class="material-icons left">contacts</i>Agregar</a></li>
+      <li><a href="interfazBusqueda.html"><i class="material-icons left">pin_drop</i>Buscar direciones</a></li>
+      <li><a href="interfazInformacion.html"><i class="material-icons left">info</i>Informacion</a></li>
+        <li><a href="index.html"><i class="material-icons left">cancel</i>cerrar cesion</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="interfazBusquedaBeneficiario.html"><i class="material-icons left">search</i>Buscar</a></li>
+      <li><a href="interfazBeneficiario.html"><i class="material-icons left">contacts</i>Agregar</a></li>
+      <li><a href="interfazBusqueda.html"><i class="material-icons left">pin_drop</i>Buscar direciones</a></li>
+      <li><a href="interfazInformacion.html"><i class="material-icons left">info</i>Informacion</a></li>
+        <li><a href="index.html"><i class="material-icons left">cancel</i>cerrar cesion</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+   <body>
+     <!--Import jQuery before materialize.js-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+
+ <title>DATOS DEL BENEFICIARIO</title>
+     <!--formulario del benefeciario-->
+ <div class="row">
+     <div class="col s12 offset-s4">
+         <h4>DATOS DEL BENEFICIARIO</h4>
+      </div>
+</div>
+<div class="contenedor formulario">
+  <form class="formulario" action="" method="post" name="formulario_beneficiario">
+
+    <div  class="row">
+      <div class="input-group col s4">
+        <input type="text" name="nombre" value="" id="nombre">
+        <label for="nombre">Nombre:</label>
+      </div>
+      <div class="input-group col s4">
+        <input type="text" name="apellidoMaterno" value="" id="apellidoMaterno">
+        <label for="apellidoMaterno">apellido materno:</label>
+      </div>
+      <div class="input-group col s4">
+        <input type="text" name="apellidoPaterno" value="" id="apellidoPaterno">
+        <label for="apellidoPaterno">apellido paterno:</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-group col s4">
+        <input type="text" name="nacionalidad" value="" id="nacionalidad">
+        <label for="nacionalidad">nacionalidad:</label>
+      </div>
+      <div class="input-group col s4">
+        <input type="text" name="entidadDeNacimiento" value="" id="entidadDeNacimiento">
+        <label for="entidadDeNacimiento">entidad De Nacimiento:</label>
+      </div>
+      </div>
+<div class="row">
+
+
+      <div class="input-group radio col s3">
+        <input type="radio" name="genero" value="Hombre" id="Hombre">
+        <label for="Hombre">Hombre :</label>
+      </div>
+</div>
+<div class="row">
+
+
+      <div class="input-group radio col s3">
+        <input type="radio" name="Mujer" value="Mujer" id="Mujer">
+        <label for="Mujer">Mujer :</label>
+      </div>
+      </div>
+
+<div class="row">
+
+
+      <div class=" input-field col s3 ">
+      <select class="" name="estadoCivil">
+        <option value="0">soltero</option>
+        <option value="1">casado</option>
+        <option value="2">viudo</option>
+        <option value="3">divorciado</option>
+        <option value="4">union libre</option>
+      </select>
+      <label for="estadoCivil">estado civil</label>
+      </div>
+
+      <div class=" input-field col s3">
+        <select class="gradoEstudios" name="gradoDeEstudios " id="grado de estudios">
+          <option value="0">prescolar</option>
+          <option value="1">primaria</option>
+          <option value="2">secundaria</option>
+          <option value="3">preparatoria</option>
+          <option value="4">tecnico</option>
+          <option value="5">licenciatura</option>
+        </select>
+        <label for="gradoDeEstudios">grado De Estudios</label>
+      </div>
+
+      <div class=" input-field  col s3">
+        <select class="" name="IstitucionDiagnostico" id="dependenciaDeDiagnostico">
+          <option value="ISEM">ISEM</option>
+          <option value="IMSS">IMSS</option>
+          <option value="ISSTE">ISSTE</option>
+          <option value="ISSEMYM">ISSEMYM</option>
+
+        </select>
+        <label for="IstitucionDiagnostico">quien emite el diagnostico</label>
+      </div>
+
+
+      <div class=" input-field col s3">
+        <select class="" name="datos" id="identificacion" onchange="acta()">
+          <option value="Acta de nacimiento">Acta de nacimiento</option>
+          <option value="credencial de elector">credencial de elector </option>
+        </select>
+        </div>
+        </div>
+<div class="row">
+
+
+      <div class="input-group col s5">
+        <input type="text" name="folio" value="" id="folioDeActa">
+        <label for="folioActa">folio acta:</label>
+      </div>
+
+      <div class="input-group col s5">
+        <input type="text" name="claveDeElector" value="" id="claveDeElector">
+        <label for="claveDeElector">clave de elector :</label>
+      </div>
+      </div>
+<div class="row">
+  <div class="col s4 offset-s4">
+    <button class="btn waves-effect waves-light " type="button" name="action" id="enviar">sigiente
+     <i class="material-icons right">send</i>
+   </button>
+   <button type="button" name="button" class=" btn waveres-effect waveres-ligth">Cancelar
+     <i class="material-icons right">cancel</i>
+   </button>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+  </form>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+$('select').material_select();
+$(".button-collapse").sideNav();
+$('.button-collapse').sideNav({
+menuWidth: 400, // Default is 240
+edge: 'left', // Choose the horizontal origin
+closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+draggable: true // Choose whether you can drag to open on touch screens
+}
+);
+});
+</script>
+<script type="text/javascript" src="js/formulario.js"></script>
+   </body>
+
+ </html>

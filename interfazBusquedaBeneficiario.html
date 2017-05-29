@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <!--Import Google Icon Font-->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+     <link rel="stylesheet" href="css/estilos.css" media="screen" title="no title">
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+   <nav class="#b0bec5 blue-grey lighten-3 ">
+  <div class="nav">
+    <a href="#!" class="brand-logo left">D.I.F</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="interfazBusquedaBeneficiario.html"><i class="material-icons left">search</i>Buscar</a></li>
+      <li><a href="interfazBeneficiario.html"><i class="material-icons left">contacts</i>Agregar</a></li>
+      <li><a href="interfazBusqueda.html"><i class="material-icons left">pin_drop</i>Buscar direciones</a></li>
+      <li><a href="interfazInformacion.html"><i class="material-icons left">info</i>Informacion</a></li>
+        <li><a href="index.html"><i class="material-icons left">cancel</i>cerrar cesion</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="interfazBusquedaBeneficiario.html"><i class="material-icons left">search</i>Buscar</a></li>
+      <li><a href="interfazBeneficiario.html"><i class="material-icons left">contacts</i>Agregar</a></li>
+      <li><a href="interfazBusqueda.html"><i class="material-icons left">pin_drop</i>Buscar direciones</a></li>
+      <li><a href="interfazInformacion.html"><i class="material-icons left">info</i>Informacion</a></li>
+        <li><a href="index.html"><i class="material-icons left">cancel</i>cerrar cesion</a></li>
+
+    </ul>
+  </div>
+</nav>
+<nav class="#b0bec5 blue-grey lighten-3">
+   <div class="nav-wrapper ">
+     <form>
+       <div class="input-field">
+         <input id="search" type="search" required>
+         <label for="search"><i class="material-icons">search</i></label>
+         <i class="material-icons">close</i>
+       </div>
+     </form>
+   </div>
+ </nav>
+
+   <body>
+     <!--Import jQuery before materialize.js-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+
+     <script type="text/javascript">
+     $(document).ready(function() {
+    $('select').material_select();
+    $(".button-collapse").sideNav();
+    $('.button-collapse').sideNav({
+    menuWidth: 400, // Default is 240
+    edge: 'left', // Choose the horizontal origin
+    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    draggable: true // Choose whether you can drag to open on touch screens
+  }
+);
+ });
+</script>
+<script type="text/javascript">
+function ConfirmDemo() {
+//Ingresamos un mensaje a mostrar
+var mensaje = confirm("desea eliminar el beneficiario");
+//Detectamos si el usuario acepto el mensaje
+if (mensaje) {
+alert("beneficiario eliminado!");
+}
+//Detectamos si el usuario denegó el mensaje
+else {
+alert("¡cancelar");
+}
+}
+</script>
+
+      <table>
+        <thead>
+          <tr>
+              <th data-field="id">id</th>
+              <th data-field="nombre">nombre</th>
+              <th data-field="apellido ">direccion</th>
+              <th data-field="apellido materno">cobeneficiario </th>
+              <th>  </th>
+              <th>  </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>06</td>
+            <td>AGUSTINA FLORES CAMPOS</td>
+            <td>ANGUSTIAS DE CALLEJA #55</td>
+            <td>OMAR ROJAS BEATRIZ</td>
+            <td><a class="btn-floating btn  waves-effect waves-light red"><i class="material-icons">mode_edit</i></a></td>
+            <td><a class="btn-floating btn  waves-effect waves-light red"><i class="material-icons" onclick="ConfirmDemo()">delete</i></a></td>
+          </tr>
+
+          <tr>
+
+
+          </tr>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+  <link rel="stylesheet" href="css/estilos.css" media="screen" title="no title">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<nav class="#b0bec5 blue-grey lighten-3 ">
+  <div class="nav">
+    <a href="#!" class="brand-logo left">D.I.F</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="usuariointerfazBusquedaBeneficiario.html"><i class="material-icons left">search</i>Buscar</a></li>
+      <li><a href="usuarioBusqueda.html"><i class="material-icons left">pin_drop</i>Buscar direciones</a></li>
+      <li><a href="Informacionusuario.html"><i class="material-icons left">info</i>Informacion</a></li>
+      <li><a href="index.html"><i class="material-icons left">cancel</i>cerrar cesion</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="usuariointerfazBusquedaBeneficiario.html"><i class="material-icons left">search</i>Buscar</a></li>
+      <li><a href="usuarioBusqueda.html"><i class="material-icons left">pin_drop</i>Buscar direciones</a></li>
+      <li><a href="interfazInformacion.html"><i class="material-icons left">info</i>Informacion</a></li>
+      <li><a href="index.html"><i class="material-icons left">cancel</i>cerrar cesion</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+<body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('select').material_select();
+      $(".button-collapse").sideNav();
+      $('.button-collapse').sideNav({
+        menuWidth: 400,
+        edge: 'left',
+        closeOnClick: true,
+        draggable: true
+      });
+    });
+  </script>
+
+
+  <div class="row">
+
+    <div class="col s4">
+
+      <!-- Promo Content 1 goes here -->
+      <div class="card medium">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/contrato.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Requisitos para apoyo de despensa<i class="material-icons right">more_vert</i></span>
+          <p>
+            <a href="#"></a>
+          </p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Requisitos para apoyo de despensa<i class="material-icons right">close</i></span>
+          <p>1 copia de acta de nacimiento</p>
+          <p>1 copia de comprobante de domicilio</p>
+          <p>croquiz de la zona </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="col s4">
+      <!-- Promo Content 2 goes here -->
+      <div class="card medium">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/calendario.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Fecha de entrega de despensas<i class="material-icons right">more_vert</i></span>
+          <p>
+            <a href="#"></a>
+          </p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Fecha de entrega de despensas <i class="material-icons right">close</i></span>
+          <p>primer periodo <br>14-15 de febrero</p>
+          <p>segundo periodo <br>18 de abril</p>
+          <p>tercer periodo <br>15 de junio/p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s4">
+      <!-- Promo Content 3 goes here -->
+      <div class="card medium">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/la-busqueda-de-empleo-2.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Informacion de la institucion<i class="material-icons right">more_vert</i></span>
+          <p>
+            <a href="#"></a>
+          </p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">informacion de la institucion<i class="material-icons right">close</i></span>
+          <p>mision:<br>Somos una institución dedicada a servir a nuestra sociedad con un sentido Humanizado y de calidad brindando calidez y atención a los grupos vulnerables promoviendo la integración familiar de los valores.
+          </p>
+          <p>vision:<br>Ser una institución de asistencia social en el municipio, reconocida por nuestros valores y compromiso social, enfocados al fortalecimiento y bienestar integral de las familias y grupos vulnerables de nuestra sociedad.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
